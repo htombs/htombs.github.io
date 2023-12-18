@@ -1,9 +1,22 @@
 body {
     display: flex;
     background-color: rgb(51, 50, 50);
-    background: 
-    linear-gradient(
-        to right,
-        #e99f0c, 
-        );
+}
+
+.header {
+    width: 100%;
+    margin: 0%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(17, 210, 253);
 }
