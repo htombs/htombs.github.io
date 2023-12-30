@@ -3,10 +3,20 @@ body {
     background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(43, 43, 46));
 }
 
-.header {
+header {
     display: flex;
     justify-content: center;
-    background-color: transparent;
+    /* background-color: transparent;
+    outline-color: black;
+    outline-style: solid;
+    border-radius: 20em;
+    margin: 2px 10px;
+    padding: 1px 1em; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
     outline-color: black;
     outline-style: solid;
     border-radius: 20em;
@@ -25,3 +35,10 @@ body {
     color: rgb(253, 44, 17);
     cursor: pointer;
 }
+
+.content :hover {
+    color: rgb(254, 254, 254);
+    /* background-color: rgb(53, 53, 54); */
+    /* border-radius: 4px; */
+}
+
