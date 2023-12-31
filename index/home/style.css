@@ -3,7 +3,7 @@ body {
     background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(43, 43, 46));
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(251, 250, 250);
 }
 
@@ -26,8 +26,12 @@ nav {
     outline-style: solid;
     border-radius: 20em;
     margin: 2px 10px;
-    padding: 1px 1em;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
+/* figure out how to stop the outline expanding with the hover function */
 
 .nav_bar {
     display: flex;
@@ -38,14 +42,21 @@ nav {
     font-weight: bold;
     font-size: 16px;
     color: rgb(253, 44, 17); */
-    cursor: pointer;
-    
+    cursor: pointer;   
+}
+.nav_bar li {
+    outline-style: solid;
+    outline-color: black; 
+    border-radius: 5em;
+    padding: 1px;
 }
 
 .nav_bar :hover {
     color: rgb(254, 254, 254);
-    background-image: linear-gradient(to right, rgb(87, 6, 138) , rgb(195, 9, 241));
-    /* border-radius: 4px; */
+    background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(112, 111, 111));
+    font-size: 120%;
+    transition: 0.1s ease-out;
+    border-radius: 5em;
 }
 
 .head {
@@ -54,21 +65,32 @@ nav {
     /* padding: 10em; */
 }
 
-img {
-    max-height: 300px;
+.image {
+    height: 450px;
     padding: 1px 1em;
     border-radius: 30px;
 }
 
+.image :active {
+    background-image: url(profile_photo2.JPG);
+}
+/* figure out future harry how to click on image to change it */
+
 .drop-down{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     list-style: none;
     gap: 1em;
+}
+
+.drop-down li {
+    border-bottom: 3px solid orange;
 }
 
 .name {
     display: flex;
     justify-content: center;
-    font-size: large;
+    font-size: 26px;
+    border-bottom: 3px solid orange;
 }
