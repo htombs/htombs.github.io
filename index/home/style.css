@@ -51,13 +51,13 @@ nav {
     padding: 1px;
 }
 
-.nav_bar :hover {
+/* .nav_bar :hover {
     color: rgb(254, 254, 254);
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(112, 111, 111));
     font-size: 120%;
     transition: 0.1s ease-out;
     border-radius: 5em;
-}
+} */
 
 .head {
     display: flex;
@@ -93,4 +93,8 @@ nav {
     justify-content: center;
     font-size: 26px;
     border-bottom: 3px solid orange;
+}
+
+img {
+    height: 250px;
 }
