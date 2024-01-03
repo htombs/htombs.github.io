@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    display: flex;
+}
+
 body {
     /* display: flex; */
     background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(43, 43, 46));
@@ -70,7 +75,7 @@ nav {
 }
 /* figure out future harry how to click on image to change it */
 
-.personal_info{
+.personal_info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -98,8 +103,44 @@ img {
     padding-bottom: 3em;
 }
 
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 0.4fr 1fr 1fr;
+    column-gap: 1px;
+}
+   
+.container img {
+     max-width: 100%;
+     max-height:100%;
+}
+   
+.text {
+     font-size: 20px;
+     
+}
+
+/* .main_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+.nav_bar_info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1em;
+}
+
 .nav_bar_info li {
     list-style: none;
     background-color: gray;
+    width: 75%;
+    border-radius: 30px;
+    /* padding: 1px; */
+}
 
+.info_item2 {
+    align-items: end;
 }
