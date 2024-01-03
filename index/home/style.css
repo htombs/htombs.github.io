@@ -125,8 +125,8 @@ img {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    gap: 1em;
-/* } */ */
+    /* gap: 1em; */
+/* } */
 
 /* .nav_bar_info li {
     list-style: none;
@@ -134,4 +134,3 @@ img {
     width: 75%;
     border-radius: 30px;
     /* padding: 1px; */
-/* } */ */
