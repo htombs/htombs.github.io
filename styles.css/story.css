@@ -38,6 +38,8 @@ nav {
 
 .breadcrumb {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     color: rgb(119, 211, 247);
+    list-style: decimal;
 }
