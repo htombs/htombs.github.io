@@ -36,7 +36,7 @@ nav {
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
 }
 
-h3 {
+.breadcrumb {
     display: flex;
     justify-content: center;
     color: rgb(119, 211, 247);
