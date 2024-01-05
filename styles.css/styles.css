@@ -98,23 +98,41 @@ img {
     padding-bottom: 3em;
 }
 
-h2 {
+h1, h2, h3 {
     color:rgb(119, 211, 247);
     display: flex;
     align-items: center;
+    border-bottom: 2px solid orange;
 }
 
 .containers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-items: center; */
 }
 
 button {
+    display: grid;
     background-color: gray;
     outline-color: black;
     outline-style: solid;
+    /* align-content: center; */
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
     align-content: center;
+}
+
+.job_date {
+    color: black;
 }
    
 /* .container img {
