@@ -136,7 +136,6 @@ p {
 
 .job_date {
     color: black;
-
 }
 
 .breadcrumb {
@@ -167,4 +166,12 @@ p {
     font-size: 20px;
     content: ">";
     padding-left: 1em;
+}
+
+.body h1 {
+    justify-content: left;
+}
+
+body p {
+    font-size: 16px;
 }
