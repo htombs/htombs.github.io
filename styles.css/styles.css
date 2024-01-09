@@ -4,14 +4,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(251, 250, 250);
-    overflow: none;
+    color: white;
 }
 
 header {
     display: flex;
     justify-content: center;
-    color: rgb(119, 211, 247);
+    /* color: rgb(119, 211, 247); */
     /* background-color: transparent;
     /* outline-color: black; */
     border-bottom: 3px solid orange;
@@ -31,7 +30,7 @@ nav {
     display: flex;
     flex-direction: row;
     /* gap: 1em; */
-    list-style: none;
+    /* list-style: none; */
     /* font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -40,17 +39,20 @@ nav {
 }
 .nav_bar li {
     /* outline-style: solid; */
-    outline-color: transparent; 
+    list-style: none; 
     border-radius: 10em;
     padding: 10px;
 }
 
+.nav_bar li a {
+    height: 20px;
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+
 .nav_bar :hover {
-    color: rgb(254, 254, 254);
+    color: white;
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
-    /* font-size: 120%;
-    transition: 0.1s ease-out; */
-    /* border-radius: 10px; */
 }
 
 .head {
