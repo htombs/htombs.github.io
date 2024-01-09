@@ -65,7 +65,7 @@ nav {
     border-radius: 30px;
 }
 
-.image :active {
+.image :hover {
     background-image: url(profile_photo2.JPG);
 }
 /* figure out future harry how to click on image to change it */
@@ -102,7 +102,7 @@ h1, h2, h3 {
     color:rgb(119, 211, 247);
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid orange;
+    text-decoration: underline 2px solid orange;
     padding-bottom: 2px;
 }
 
@@ -137,4 +137,34 @@ p {
 .job_date {
     color: black;
 
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+}
+
+.breadcrumb li {
+    list-style: none;
+    font-size: 20px;
+    border-radius: 10em;
+}
+
+.breadcrumb li a {
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+
+.breadcrumb li :hover {
+    color: rgb(254, 254, 254);
+}
+
+.breadcrumb :first-child ::after {
+    color: rgb(119, 211, 247);
+    font-size: 20px;
+    content: ">";
+    padding-left: 1em;
 }
