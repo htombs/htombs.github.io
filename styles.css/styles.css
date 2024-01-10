@@ -25,7 +25,7 @@ nav {
     border-radius: 20em;
     margin: 2px 10px; */
 }
-/* figure out how to stop the outline expanding with the hover function */
+
 
 .nav_bar {
     display: flex;
@@ -50,6 +50,11 @@ nav {
     color: rgb(119, 211, 247);
     text-decoration: none;
 }
+
+.nav_bar li :hover {
+    color: white;
+}
+/* worjk out later how to make nav-bar words hover white*/
 
 .nav_bar :hover {
     color: white;
@@ -143,10 +148,13 @@ button {
 
 p {
     align-content: center;
+    font-size: 10px;
 }
 
 .job_date {
     color: black;
+    font-size: 14px;
+    ;
 }
 
 .breadcrumb {
@@ -181,4 +189,10 @@ p {
 
 body p {
     font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
