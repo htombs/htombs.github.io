@@ -102,7 +102,6 @@ img {
 }
 
 .main {
-    border-bottom: 3px solid orange;
     padding-bottom: 3em;
 }
 
@@ -114,8 +113,9 @@ h1, h2, h3 {
     padding-bottom: 1px;
 }
 
-h4 {
+.body h4 {
     color:rgb(119, 211, 247);
+    font-size: 26px;
     display: flex;
     justify-content: left;
     text-decoration: underline 2.5px solid orange;
@@ -125,7 +125,7 @@ h4 {
 .containers {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* justify-items: center; */
     padding: 20px;
     row-gap: 3em;
@@ -148,12 +148,12 @@ button {
 .job_company {
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .job_title {
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: underline;
 }
 
@@ -162,14 +162,13 @@ button {
     flex-direction: column;
     padding-inline-start: 15px;
     text-align: start;
+    font-size: 16px;
+    padding-top: 0.5em;
 }
 
 .job_roles li {
     display: flex;
     justify-content: flex-start;
-    padding-top: 0.3em;
-    font-size: 16px;
-/* figure out later how to make this move over to left */
 }
 
 .job_date {
@@ -201,28 +200,26 @@ button {
 }
 
 .breadcrumb li :hover {
-    color: rgb(254, 254, 254);
+    color: white;
 }
 
-.breadcrumb :first-child ::after {
-    color: rgb(119, 211, 247);
+.breadcrumb li+li ::before {
+    color: rgb(10, 176, 241);
     font-size: 20px;
     content: ">";
-    padding-left: 1em;
-}
-
-.breadcrumb :last-child ::after {
-    content: none;
-}
-
-body p {
-    font-size: 16px;
+    padding-right: 1em;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     gap: 1em;
+    border-top: solid 3px orange;
+    padding: 2em;
+}
+
+.footer a {
+    color: white;
 }
 
 a {
