@@ -111,7 +111,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     text-decoration: underline 2.5px solid orange;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 h4 {
@@ -132,29 +132,51 @@ h4 {
 }
 
 button {
-    display: grid;
+    /* display: flex; */
+    /* flex-direction: column; */
     background-color: gray;
-    /* outline-color: black; */
     outline-style: solid;
-    /* align-content: center; */
-    height: 300px;
+    height: 400px;
     width: 300px;
     border-radius: 20px;
     color: white;
-    font-size: 20px;
+    /* font-size: 20px; */
     cursor: pointer;
     font-weight: bold;
 }
 
-.job_information {
-    align-content: center;
-    font-size: 14px;
-    text-decoration: none;
+.job_company {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.job_title {
+    display: flex;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.job_roles_list {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 15px;
+    text-align: start;
+}
+
+.job_roles li {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.3em;
+    font-size: 16px;
+/* figure out later how to make this move over to left */
 }
 
 .job_date {
+    display: flex;
+    justify-content: right;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
 
