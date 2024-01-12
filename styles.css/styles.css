@@ -242,3 +242,9 @@ a {
     color: rgb(119, 211, 247);
     text-decoration: underline 3px orange;   
 }
+
+.skills_li {
+    list-style-type: "-";
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
