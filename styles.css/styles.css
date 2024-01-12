@@ -51,13 +51,12 @@ nav {
     text-decoration: none;
 }
 
-.nav_bar li :hover {
+/* .nav_bar li :hover {
     color: white;
-}
+} */
 /* worjk out later how to make nav-bar words hover white*/
 
 .nav_bar :hover {
-    color: white;
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
 }
 
@@ -72,11 +71,6 @@ nav {
     padding: 1px 1em;
     border-radius: 30px;
 }
-
-.image :hover {
-    background-image: url(profile_photo2.JPG);
-}
-/* figure out future harry how to click on image to change it */
 
 .personal_info {
     display: flex;
