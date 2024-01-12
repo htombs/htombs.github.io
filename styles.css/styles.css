@@ -30,31 +30,30 @@ nav {
 .nav_bar {
     display: flex;
     flex-direction: row;
-    /* gap: 1em; */
-    /* list-style: none; */
-    /* font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(253, 44, 17); */
-    cursor: pointer;   
+    outline: solid 1px rgb(46, 46, 46);
+    border-radius: 10em;
+    cursor: pointer; 
+    padding-inline-start: 0px;
+    padding-inline-end: 8px;  
+}
+
+.nav_bar .current {
+    background-color: rgb(44, 40, 40);
 }
 .nav_bar li {
-    /* outline-style: solid; */
     list-style: none; 
     border-radius: 10em;
     padding: 10px;
+    margin-left: 10px;
 }
 
 .nav_bar li a {
+    display: flex;
+    justify-content: space-between;
     height: 20px;
     color: rgb(119, 211, 247);
     text-decoration: none;
 }
-
-/* .nav_bar li :hover {
-    color: white;
-} */
-/* worjk out later how to make nav-bar words hover white*/
 
 .nav_bar :hover {
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
