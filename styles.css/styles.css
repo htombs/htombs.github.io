@@ -236,3 +236,9 @@ a {
 .skills_ul li {
     font-family: sans-serif;
 }
+
+.skills_ul li p {
+    display: inline;
+    color: rgb(119, 211, 247);
+    text-decoration: underline 3px orange;   
+}
