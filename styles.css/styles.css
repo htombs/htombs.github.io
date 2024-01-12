@@ -1,8 +1,8 @@
 body {
     /* display: flex; */
     background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(64, 64, 67));
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-family: sans-serif;
     font-size: 20px;
     color: white;
 }
@@ -107,6 +107,15 @@ h1, h2, h3 {
     padding-bottom: 1px;
 }
 
+h4 {
+    color:rgb(119, 211, 247);
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline 2.5px solid orange;
+    padding-bottom: 2px;   
+}
+
 .body h4 {
     color:rgb(119, 211, 247);
     font-size: 26px;
@@ -114,6 +123,10 @@ h1, h2, h3 {
     justify-content: left;
     text-decoration: underline 2.5px solid orange;
     padding-bottom: 2px;
+}
+
+p {
+    font-size: 20px;
 }
 
 .containers {
@@ -218,4 +231,8 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.skills_ul li {
+    font-family: sans-serif;
 }
