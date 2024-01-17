@@ -67,8 +67,18 @@ nav {
 
 .image {
     height: 450px;
-    padding: 1px 1em;
+    width: 375px;
+    /* padding: 1px 1em; */
     border-radius: 30px;
+}
+
+.photo_container {
+    display: flex;
+    overflow-x: scroll;
+    border-radius: 30px;
+    width: 375px;
+    min-width: 375px;
+    min-height: 450px;
 }
 
 .personal_info {
