@@ -151,6 +151,16 @@ button {
     font-weight: bold;
 }
 
+.job_info {
+        background-color: gray;
+        outline-style: solid;
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
 .job_company {
     display: flex;
     justify-content: center;
