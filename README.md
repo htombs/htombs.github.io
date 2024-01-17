@@ -1,10 +1,10 @@
 # my-profile-website
 this is my profile website showcasing me as a person, my accomplishments and hopefully making me more hirable to future employers
 
-## Home-Page (index.html)
+## Home-Page (html)
 
 ### header: - Home - Story - Employment - Skills -contact details
-  - the header will be fixed above each page for ease of use, but only when you clock on a seperate page. So won't show on the home page (index.html)
+  - the header will be fixed above each page for ease of use, but only when you clock on a seperate page. So won't show on the home page (html)
 
 #### profile image (pick a cool one)
 - underneath will be an accordian/button style with the listed sections in the header, these will only be on the main page and is where the "home" button takes you 
