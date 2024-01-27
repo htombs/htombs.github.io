@@ -40,6 +40,7 @@ nav {
 .nav_bar .current {
     background-color: rgb(44, 40, 40);
 }
+
 .nav_bar li {
     list-style: none; 
     border-radius: 10em;
@@ -139,12 +140,11 @@ h4 {
     display: flex;
     justify-content: center;
     text-decoration: underline 2.5px solid orange;
-    padding-bottom: 2px;   
 }
 
 .body h4 {
     color:rgb(119, 211, 247);
-    font-size: 26px;
+    font-size: 32px;
     display: flex;
     justify-content: left;
     text-decoration: underline 2.5px solid orange;
@@ -165,28 +165,39 @@ p {
 }
 
 button {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex; */
+    flex-direction: column;
     background-color: gray;
     outline-style: solid;
     height: 400px;
     width: 300px;
     border-radius: 20px;
     color: white;
-    /* font-size: 20px; */
+    font-size: 20px;
     cursor: pointer;
     font-weight: bold;
 }
 
+.button_info h3 {
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    padding: 2px;
+}
+
 .job_info {
-        background-color: gray;
-        outline-style: solid;
-        height: 400px;
-        width: 300px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: gray;
+    outline-style: solid;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
 
 .job_company {
     display: flex;
@@ -198,6 +209,7 @@ button {
     display: flex;
     font-size: 22px;
     text-decoration: underline;
+    /* padding-bottom: 0.5px; */
 }
 
 .job_roles_list {
@@ -206,7 +218,6 @@ button {
     padding-inline-start: 15px;
     text-align: start;
     font-size: 16px;
-    padding-top: 0.5em;
 }
 
 .job_roles li {
@@ -215,8 +226,6 @@ button {
 }
 
 .job_date {
-    display: flex;
-    justify-content: right;
     color:rgb(119, 211, 247);
     text-decoration: underline 2.5px solid orange;
     font-size: 16px;
@@ -263,10 +272,6 @@ button {
 
 .footer a {
     color: white;
-}
-
-a {
-    text-decoration: none;
 }
 
 .skills_ul li {
