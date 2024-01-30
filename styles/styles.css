@@ -10,22 +10,25 @@ body {
 header {
     display: flex;
     justify-content: center;
-    /* color: rgb(119, 211, 247); */
-    /* background-color: transparent;
-    /* outline-color: black; */
     border-bottom: 3px solid orange;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-grow: 1;
-    /* outline-color: black;
-    outline-style: solid;
-    border-radius: 20em;
-    margin: 2px 10px; */
 }
 
+.home_icon {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.home_icon a {
+    color: white;
+}
 
 .nav_bar {
     display: flex;
@@ -34,7 +37,7 @@ nav {
     border-radius: 10em;
     cursor: pointer; 
     padding-inline-start: 0px;
-    padding-inline-end: 8px;  
+    padding-inline-end: 8px; 
 }
 
 .nav_bar .current {
@@ -58,6 +61,62 @@ nav {
 
 .nav_bar :hover {
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.hamburger_icon {
+    margin: auto 0;
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger_icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, -8px);
+    transform: rotate(-45deg) translate(-6px, -8px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        display: none;
+    }
+
+    .hamburger_icon {
+        display: block;
+    }
 }
 
 .head {
@@ -180,7 +239,7 @@ button {
 
 .button_info h3 {
     display: flex;
-    align-self: center;
+    align-self: center  ;
     font-weight: bold;
     padding: 2px;
 }
