@@ -365,13 +365,13 @@ button {
 .footer {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
     border-top: solid 3px orange;
     padding: 2em;
 }
 
 .footer a {
-    color: rgb(241, 19, 19);
+    color: rgb(10, 176, 241);
 }
 
 .skills_ul li {
