@@ -103,6 +103,10 @@ header {
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
 }
 
+.mobile_menu li a:hover {
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
     header .nav_bar {
         display: none;
