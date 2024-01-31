@@ -114,6 +114,10 @@ header {
     .hamburger_icon {
         display: block;
     }
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .drop_down_menu {
@@ -199,7 +203,7 @@ nav {
     overflow-x: scroll;
     border-radius: 30px;
     width: 315px;
-    min-width: 200px;
+    min-width: 315px;
     min-height: 450px;
 }
 
@@ -209,6 +213,8 @@ nav {
     justify-content: space-between;
     list-style: none;
     gap: 1em;
+    row-gap: 1em;
+    font-size: 25px;
 }
 
 .personal_info li {
