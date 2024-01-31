@@ -33,7 +33,7 @@ header {
 .hamburger_icon div {
     width: 35px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(119, 211, 247);
     /* background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(64, 64, 67)); */
     margin: 6px 0;
     transition: 0.4s;
@@ -71,7 +71,6 @@ header {
     left: 0;
     /* height: calc(100vh - 50px); */
     width: 100%;
-    transition-duration: 4s;
 }
 
 .mobile_menu ul {
@@ -90,6 +89,7 @@ header {
     list-style: none;
     transition: 1s;
     border-radius: 10em;
+    text-decoration: underline 2.5px solid orange;
   }
 
 .mobile_menu li a {
