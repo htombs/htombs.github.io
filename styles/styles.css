@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-
 * {
     box-sizing: border-box;
   }
@@ -330,6 +329,7 @@ button {
     text-align: start;
     font-size: 16px;
     margin-top: 0.5px;
+
 }
 
 .job_roles li {
