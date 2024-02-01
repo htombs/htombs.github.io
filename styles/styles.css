@@ -1,31 +1,136 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
+
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
     /* display: flex; */
     background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(64, 64, 67));
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     color: white;
 }
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* color: rgb(119, 211, 247); */
-    /* background-color: transparent;
-    /* outline-color: black; */
     border-bottom: 3px solid orange;
+    padding: 23.5px;
+}
+
+/* drop down menu toggle section*/
+.hamburger_icon {
+    /* margin: auto 0; */
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger_icon div {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(119, 211, 247);
+    /* background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(64, 64, 67)); */
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 20px;
+    margin-left: 50%;
+}
+
+/*how the hamburger sign reacts when clicked */
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+.open .bar2 {
+    opacity: 0;
+  }
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+
+/* mobile menu section */
+.open .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 2s;
+}
+
+.mobile_menu {
+    display: none;
+    top: 50px;
+    left: 0;
+    /* height: calc(100vh - 50px); */
+    width: 100%;
+}
+
+.mobile_menu ul {
+    color: rgb(119, 211, 247);
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+.mobile_menu li {
+    color: rgb(119, 211, 247);
+    padding: 5px;
+    margin-left: 10px;
+    list-style: none;
+    transition: 1s;
+    border-radius: 10em;
+    text-decoration: underline 2.5px solid orange;
+  }
+
+.mobile_menu li a {
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+  
+.mobile_menu li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
+}
+
+.mobile_menu li a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    header .nav_bar {
+        display: none;
+    }
+    .hamburger_icon {
+        display: block;
+    }
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.drop_down_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-grow: 1;
-    /* outline-color: black;
-    outline-style: solid;
-    border-radius: 20em;
-    margin: 2px 10px; */
 }
-
 
 .nav_bar {
     display: flex;
@@ -34,12 +139,13 @@ nav {
     border-radius: 10em;
     cursor: pointer; 
     padding-inline-start: 0px;
-    padding-inline-end: 8px;  
+    padding-inline-end: 9px; 
 }
 
 .nav_bar .current {
     background-color: rgb(44, 40, 40);
 }
+
 .nav_bar li {
     list-style: none; 
     border-radius: 10em;
@@ -57,6 +163,9 @@ nav {
 
 .nav_bar :hover {
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
+    color: aqua;
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 
 .head {
@@ -93,8 +202,8 @@ nav {
     display: flex;
     overflow-x: scroll;
     border-radius: 30px;
-    width: 350px;
-    min-width: 200;
+    width: 315px;
+    min-width: 315px;
     min-height: 450px;
 }
 
@@ -104,6 +213,8 @@ nav {
     justify-content: space-between;
     list-style: none;
     gap: 1em;
+    row-gap: 1em;
+    font-size: 25px;
 }
 
 .personal_info li {
@@ -139,12 +250,11 @@ h4 {
     display: flex;
     justify-content: center;
     text-decoration: underline 2.5px solid orange;
-    padding-bottom: 2px;   
 }
 
 .body h4 {
     color:rgb(119, 211, 247);
-    font-size: 26px;
+    font-size: 32px;
     display: flex;
     justify-content: left;
     text-decoration: underline 2.5px solid orange;
@@ -165,28 +275,37 @@ p {
 }
 
 button {
-    /* display: flex; */
-    /* flex-direction: column; */
     background-color: gray;
     outline-style: solid;
-    height: 400px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
     border-radius: 20px;
     color: white;
-    /* font-size: 20px; */
+    font-size: 30px;
     cursor: pointer;
     font-weight: bold;
 }
 
+.button_info h3 {
+    display: flex;
+    align-self: center  ;
+    font-weight: bold;
+    padding: 2px;
+}
+
 .job_info {
-        background-color: gray;
-        outline-style: solid;
-        height: 400px;
-        width: 300px;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: gray;
+    outline-style: solid;
+    height: 400px;
+    width: 425px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
 
 .job_company {
     display: flex;
@@ -198,6 +317,7 @@ button {
     display: flex;
     font-size: 22px;
     text-decoration: underline;
+    /* padding-bottom: 0.5px; */
 }
 
 .job_roles_list {
@@ -206,7 +326,6 @@ button {
     padding-inline-start: 15px;
     text-align: start;
     font-size: 16px;
-    padding-top: 0.5em;
 }
 
 .job_roles li {
@@ -215,8 +334,6 @@ button {
 }
 
 .job_date {
-    display: flex;
-    justify-content: right;
     color:rgb(119, 211, 247);
     text-decoration: underline 2.5px solid orange;
     font-size: 16px;
@@ -256,17 +373,13 @@ button {
 .footer {
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 2em;
     border-top: solid 3px orange;
     padding: 2em;
 }
 
 .footer a {
-    color: white;
-}
-
-a {
-    text-decoration: none;
+    color: rgb(10, 176, 241);
 }
 
 .skills_ul li {
