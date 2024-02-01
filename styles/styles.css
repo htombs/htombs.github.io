@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 
 * {
@@ -32,10 +32,9 @@ header {
 
 .hamburger_icon div {
     width: 35px;
-    height: 3px;
+    height: 5.5px;
     background-color: rgb(119, 211, 247);
-    /* background-image: linear-gradient(to right, rgb(13, 13, 13) , rgb(64, 64, 67)); */
-    margin: 6px 0;
+    margin: 3.5px 0;
     transition: 0.4s;
     border-radius: 20px;
     margin-left: 50%;
@@ -62,15 +61,16 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition-duration: 2s;
+    transition: 0.7s ease-in;
+    padding-left: unset;
 }
 
 .mobile_menu {
     display: none;
     top: 50px;
     left: 0;
-    /* height: calc(100vh - 50px); */
-    width: 100%;
+    /* height: calc(80vh - 50px); */
+    /* width: 100%; */
 }
 
 .mobile_menu ul {
@@ -84,6 +84,7 @@ header {
   
 .mobile_menu li {
     color: rgb(119, 211, 247);
+    font-size: 30px;
     padding: 5px;
     margin-left: 10px;
     list-style: none;
@@ -293,14 +294,14 @@ button {
     padding: 2px;
 }
 
-.job_info {
+.job_container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: gray;
     outline-style: solid;
-    height: 400px;
-    width: 425px;
+    height: 475px;
+    width: 500px;
     border-radius: 20px;
     color: white;
     font-weight: bold;
@@ -311,13 +312,15 @@ button {
     display: flex;
     justify-content: center;
     font-size: 28px;
+    margin-bottom: 0.5px;
 }
 
 .job_title {
     display: flex;
     font-size: 22px;
     text-decoration: underline;
-    /* padding-bottom: 0.5px; */
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
 }
 
 .job_roles_list {
@@ -326,6 +329,7 @@ button {
     padding-inline-start: 15px;
     text-align: start;
     font-size: 16px;
+    margin-top: 0.5px;
 }
 
 .job_roles li {
@@ -337,7 +341,6 @@ button {
     color:rgb(119, 211, 247);
     text-decoration: underline 2.5px solid orange;
     font-size: 16px;
-    text-decoration: none;
 }
 
 .breadcrumb {
