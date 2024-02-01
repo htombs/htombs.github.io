@@ -277,8 +277,8 @@ p {
 button {
     background-color: gray;
     outline-style: solid;
-    height: 250px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     border-radius: 20px;
     color: white;
     font-size: 30px;
