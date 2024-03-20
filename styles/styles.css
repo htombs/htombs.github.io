@@ -139,7 +139,7 @@ nav {
     border-radius: 10em;
     cursor: pointer; 
     padding-inline-start: 0px;
-    padding-inline-end: 9px; 
+    padding-inline-end: 0px; 
 }
 
 .nav_bar .current {
@@ -150,13 +150,11 @@ nav {
     list-style: none; 
     border-radius: 10em;
     padding: 10px;
-    margin-left: 10px;
 }
 
 .nav_bar li a {
     display: flex;
     justify-content: space-between;
-    height: 20px;
     color: rgb(119, 211, 247);
     text-decoration: none;
 }
