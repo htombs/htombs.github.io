@@ -274,13 +274,22 @@ p {
 .project_button {
     background-color: gray;
     outline-style: solid;
-    height: 200px;
     width: 600px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 20px;
     color: white;
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.project_title {
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 2px;
 }
 
 .containers {
@@ -417,4 +426,15 @@ button {
     list-style-type: "-";
     padding-left: 15px;
     padding-bottom: 15px;
+}
+
+.github_repo {
+    color: rgb(10, 176, 241);
+    text-decoration: underline 2.5px solid orange;
+}
+.skill_list{
+    display: flex;
+    flex-direction: row;
+    color: rgb(10, 176, 241);
+    font-size: small;
 }
