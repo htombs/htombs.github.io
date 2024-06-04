@@ -418,3 +418,14 @@ button {
     padding-left: 15px;
     padding-bottom: 15px;
 }
+
+.github_repo {
+    color: rgb(10, 176, 241);
+    text-decoration: underline 2.5px solid orange;
+}
+.skill_list{
+    display: flex;
+    flex-direction: row;
+    color: rgb(10, 176, 241);
+    font-size: small;
+}
