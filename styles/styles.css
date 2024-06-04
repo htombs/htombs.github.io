@@ -266,6 +266,7 @@ p {
 .project_container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 20px;
     row-gap: 3em;
 }
