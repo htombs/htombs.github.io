@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "C:\\Users\\hazto\\Documents\\cassette-finder\\cassette_finder.db",
+            "name": "cassette-finder"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
