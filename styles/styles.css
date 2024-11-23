@@ -196,16 +196,47 @@ nav {
     background-color: lightslategray
   }
 
-.image_container {
-    display: flex;
-    overflow-x: scroll;
+#profile_image0 {
+    display: none;
     border-radius: 30px;
     width: 315px;
     min-width: 315px;
     min-height: 450px;
 }
 
-.personal_info {
+#profile_image1 {
+    display: none;
+    border-radius: 30px;
+    width: 315px;
+    min-width: 315px;
+    min-height: 450px;
+}
+
+#profile_image2 {
+    display: none;
+    border-radius: 30px;
+    width: 315px;
+    min-width: 315px;
+    min-height: 450px;
+}
+
+#profile_image3 {
+    display: none;
+    border-radius: 30px;
+    width: 315px;
+    min-width: 315px;
+    min-height: 450px;
+}
+
+#profile_image4 {
+    display: none;
+    border-radius: 30px;
+    width: 315px;
+    min-width: 315px;
+    min-height: 450px;
+}
+
+.personal_info li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -215,7 +246,7 @@ nav {
     font-size: 25px;
 }
 
-.personal_info li {
+.personal_info li, button {
     border-bottom: 3px solid orange;
 }
 
