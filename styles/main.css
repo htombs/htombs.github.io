@@ -46,17 +46,23 @@
     min-height: 450px;
 }
 
+/* .personal_info ul {
+    justify-content: space-between;
+} */
+
+.personal_info ul {
+    padding: 20px;
+}
+
 .personal_info li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: start;
     list-style: none;
     gap: 1em;
     row-gap: 1em;
     font-size: 25px;
-}
-
-.personal_info li {
     border-bottom: 3px solid orange;
 }
 
@@ -240,7 +246,6 @@ button {
     content: ">";
     padding-right: 1em;
 }
-
 
 .skills_ul li {
     font-family: sans-serif;
