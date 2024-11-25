@@ -12,43 +12,14 @@
 }
 
 #profile_image0 {
-    display: none;
     min-width: 315px;
     min-height: 450px;
     border-radius: 30px;
 }
 
-#profile_image1 {
-    display: none;
-    border-radius: 30px;
-    min-width: 315px;
-    min-height: 450px;
-}
-
-#profile_image2 {
-    display: none;
-    border-radius: 30px;
-    min-width: 315px;
-    min-height: 450px;
-}
-
-#profile_image3 {
-    display: none;
-    border-radius: 30px;
-    min-width: 315px;
-    min-height: 450px;
-}
-
-#profile_image4 {
-    display: none;
-    border-radius: 30px;
-    min-width: 315px;
-    min-height: 450px;
-}
-
-/* .personal_info ul {
+.personal_info ul {
     justify-content: space-between;
-} */
+}
 
 .personal_info ul {
     padding: 20px;
@@ -66,6 +37,7 @@
 
 .personal_info li {
     border-bottom: 3px solid orange;
+    cursor: pointer;
 }
 
 .name {

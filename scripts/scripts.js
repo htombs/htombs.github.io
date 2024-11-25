@@ -2,57 +2,40 @@ function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
 
-const img0 = document.getElementById("profile_image0")
-const img1 = document.getElementById("profile_image1")
-const img2 = document.getElementById("profile_image2")
-const img3 = document.getElementById("profile_image3")
-const img4 = document.getElementById("profile_image4")
-
 function showimg0() {
-    img0.style.display = "block";
-    img1.style.display = "none";
-    img2.style.display = "none";
-    img3.style.display = "none";
-    img4.style.display = "none";
+    let img0 = document.getElementById("profile_image0")
+    if (!img0.src.match("/media/profile_photo.jpg")){
+        img0.src = "/media/profile_photo.jpg"
+    }
 }
-
+        
 function showimg1() {
-    img0.style.display = "none";
-    img1.style.display = "block";
-    img2.style.display = "none";
-    img3.style.display = "none";
-    img4.style.display = "none";
+    let img1 = document.getElementById("profile_image0")
+    if (!img1.src.match("/media/profile_photo1.jpg")){
+        img1.src = "/media/profile_photo1.jpg"
+    }
 }
 
 function showimg2() {
-    img0.style.display = "none";
-    img1.style.display = "none";
-    img2.style.display = "block";
-    img3.style.display = "none";
-    img4.style.display = "none";
+    let img2 = document.getElementById("profile_image0")
+    if (!img2.src.match("/media/profile_photo2.jpg")){
+        img2.src = "/media/profile_photo2.jpg"
+    }
 }
 
 function showimg3() {
-    img0.style.display = "none";
-    img1.style.display = "none";
-    img2.style.display = "none";
-    img3.style.display = "block";
-    img4.style.display = "none";
+    let img3 = document.getElementById("profile_image0")
+    if (!img3.src.match("/media/profile_photo3.jpg")){
+        img3.src = "/media/profile_photo3.jpg"
+    }
 }
 
 function showimg4() {
-    img0.style.display = "none";
-    img1.style.display = "none";
-    img2.style.display = "none";
-    img3.style.display = "none";
-    img4.style.display = "block";
+    let img4 = document.getElementById("profile_image0")
+    if (!img4.src.match("/media/profile_photo4.jpg")){
+        img4.src = "/media/profile_photo4.jpg"
+    }
 }
-
-const img0button = document.getElementById("img0")
-const img1button = document.getElementById("img1")
-const img2button = document.getElementById("img2")
-const img3button = document.getElementById("img3")
-const img4button = document.getElementById("img4")
 
 img0button.addEventListener("click", showimg0());
 img1button.addEventListener("click", showimg1());
