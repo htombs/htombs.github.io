@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    border-top: solid 3px orange;
+    padding: 2em;
+}
+
+.footer a {
+    color: rgb(10, 176, 241);
+}

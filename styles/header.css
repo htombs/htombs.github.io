@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid orange;
+    padding: 23.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    outline: solid 1px rgb(46, 46, 46);
+    border-radius: 10em;
+    cursor: pointer; 
+    padding-inline-start: 0px;
+    padding-inline-end: 0px; 
+}
+
+.nav_bar .current {
+    background-color: rgb(44, 40, 40);
+}
+
+.nav_bar li {
+    list-style: none; 
+    border-radius: 10em;
+    padding: 10px;
+}
+
+.nav_bar li a {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+
+.nav_bar :hover {
+    background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
+    color: aqua;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
