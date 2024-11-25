@@ -36,9 +36,3 @@ function showimg4() {
         img4.src = "/media/profile_photo4.jpg"
     }
 }
-
-img0button.addEventListener("click", showimg0());
-img1button.addEventListener("click", showimg1());
-img2button.addEventListener("click", showimg2());
-img3button.addEventListener("click", showimg3());
-img4button.addEventListener("click", showimg4());
