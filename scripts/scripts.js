@@ -9,7 +9,7 @@ const img3 = document.getElementById("profile_image3")
 const img4 = document.getElementById("profile_image4")
 
 function showimg0() {
-    img0.style.display = "flex";
+    img0.style.display = "block";
     img1.style.display = "none";
     img2.style.display = "none";
     img3.style.display = "none";
@@ -18,7 +18,7 @@ function showimg0() {
 
 function showimg1() {
     img0.style.display = "none";
-    img1.style.display = "flex";
+    img1.style.display = "block";
     img2.style.display = "none";
     img3.style.display = "none";
     img4.style.display = "none";
@@ -27,7 +27,7 @@ function showimg1() {
 function showimg2() {
     img0.style.display = "none";
     img1.style.display = "none";
-    img2.style.display = "flex";
+    img2.style.display = "block";
     img3.style.display = "none";
     img4.style.display = "none";
 }
@@ -36,7 +36,7 @@ function showimg3() {
     img0.style.display = "none";
     img1.style.display = "none";
     img2.style.display = "none";
-    img3.style.display = "flex";
+    img3.style.display = "block";
     img4.style.display = "none";
 }
 
@@ -45,7 +45,7 @@ function showimg4() {
     img1.style.display = "none";
     img2.style.display = "none";
     img3.style.display = "none";
-    img4.style.display = "flex";
+    img4.style.display = "block";
 }
 
 const img0button = document.getElementById("img0")
