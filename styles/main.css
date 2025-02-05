@@ -92,7 +92,8 @@ p {
     padding: 20px;
     row-gap: 3em;
 } */
-.project_button {
+
+.project_button, .button_info {
     background-color: gray;
     outline-style: solid;
     width: 500px;
@@ -180,36 +181,6 @@ button {
     color:rgb(119, 211, 247);
     text-decoration: underline 2.5px solid orange;
     font-size: 16px;
-}
-
-.breadcrumb {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1em;
-    list-style: none;
-}
-
-.breadcrumb li {
-    list-style: none;
-    font-size: 20px;
-    border-radius: 10em;
-}
-
-.breadcrumb li a {
-    color: rgb(119, 211, 247);
-    text-decoration: none;
-}
-
-.breadcrumb li :hover {
-    color: white;
-}
-
-.breadcrumb li+li ::before {
-    color: rgb(10, 176, 241);
-    font-size: 20px;
-    content: ">";
-    padding-right: 1em;
 }
 
 .skills_ul li {
