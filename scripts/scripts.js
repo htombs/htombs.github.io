@@ -2,10 +2,6 @@ function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
 
-function getProfileImage() {
-   return document.getElementById("profile_image0")
-}
-
 function showimg0(){
     let img0 = document.getElementById("profile_image0")
     if (!img0.src.match("./media/profile_photo.jpg")) {
@@ -40,9 +36,3 @@ function showimg4(){
         img4.src = "./media/profile_photo4.jpg"
     }
 }
-
-img0.addEventListener("click", showimg0())
-img1.addEventListener("click", showimg1())
-img2.addEventListener("click", showimg2())
-img3.addEventListener("click", showimg3())
-img4.addEventListener("click", showimg4())
