@@ -13,7 +13,8 @@
     margin: 3.5px 0;
     transition: 0.4s;
     border-radius: 20px;
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 /*how the hamburger sign reacts when clicked */
@@ -37,7 +38,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: 0.7s ease-in;
     padding-left: unset;
 }
 
@@ -64,7 +64,6 @@
     padding: 5px;
     margin-left: 10px;
     list-style: none;
-    transition: 1s;
     border-radius: 10em;
     text-decoration: underline 2.5px solid orange;
   }
@@ -94,6 +93,9 @@
     .head {
         flex-direction: column;
         align-items: center;
+    }
+    .mobile_menu {
+        transition: 0.4s;;
     }
 }
 

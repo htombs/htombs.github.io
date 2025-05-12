@@ -96,7 +96,6 @@ p {
 .project_button, .button_info {
     background-color: gray;
     outline-style: solid;
-    width: 500px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -116,6 +115,7 @@ p {
 
 .containers {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 3em;
     justify-content: space-evenly;
@@ -139,8 +139,8 @@ button {
     justify-content: space-around;
     background-color: gray;
     outline-style: solid;
-    height: 475px;
-    width: 500px;
+    /* height: 475px; */
+    /* width: 500px; */
     border-radius: 20px;
     color: white;
     font-weight: bold;
