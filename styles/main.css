@@ -215,9 +215,27 @@ button {
 }
 
 .github_repo {
+    display: flex;
+    justify-content: center;
     color: rgb(10, 176, 241);
     text-decoration: underline 2.5px solid orange;
-} 
+
+}
+
+#github_repo_link:hover {
+    color: rgb(97, 96, 96);
+    text-decoration: underline 2.5px solid orange;
+}
+
+#github_repo_link {
+    color: white;
+    text-decoration: underline 2.5px solid orange;
+    background-color: rgb(10, 176, 241);
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 
 a:visited {
     color: rgb(10, 176, 241);
