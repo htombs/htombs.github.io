@@ -28,13 +28,13 @@ The site features:
 / (root)
 ├── index.html ← Homepage (intro)
 ├── html ← About, Projects, Employment, Skills
-  |── hmtl/
+  └── hmtl/
 ├── media / ← Images
 │ └── img/
 ├── scripts / ← scripts
-│ ├── js/
+│ └── js/
 ├── styles / ← styles
-│ ├── css/
+│ └── css/
 
 ---
 
