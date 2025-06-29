@@ -96,7 +96,6 @@ p {
 .project_button, .button_info {
     background-color: gray;
     outline-style: solid;
-    width: 500px;
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -108,7 +107,7 @@ p {
 
 .project_title {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     font-weight: bold;
     padding: 2px;
     margin-top: 2px;
@@ -116,6 +115,7 @@ p {
 
 .containers {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 3em;
     justify-content: space-evenly;
@@ -139,8 +139,8 @@ button {
     justify-content: space-around;
     background-color: gray;
     outline-style: solid;
-    height: 475px;
-    width: 500px;
+    /* height: 475px; */
+    /* width: 500px; */
     border-radius: 20px;
     color: white;
     font-weight: bold;
@@ -215,9 +215,27 @@ button {
 }
 
 .github_repo {
+    display: flex;
+    justify-content: center;
     color: rgb(10, 176, 241);
     text-decoration: underline 2.5px solid orange;
-} 
+
+}
+
+#github_repo_link:hover {
+    color: rgb(97, 96, 96);
+    text-decoration: underline 2.5px solid orange;
+}
+
+#github_repo_link {
+    color: white;
+    text-decoration: underline 2.5px solid orange;
+    background-color: rgb(10, 176, 241);
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
 
 a:visited {
     color: rgb(10, 176, 241);
