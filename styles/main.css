@@ -38,6 +38,13 @@
 .personal_info li {
     border-bottom: 3px solid orange;
     cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.personal_info li:hover {
+    border-bottom-color: rgb(119, 211, 247);
+    transform: scale(1.05);
 }
 
 .name {
@@ -103,6 +110,13 @@ p {
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.project_button:hover, .button_info:hover {
+    background-color: rgb(7, 65, 88);
+    transform: scale(1.05);
 }
 
 .project_title {
@@ -212,6 +226,13 @@ button {
     border-radius: 10em;
     border: solid 1px rgb(46, 46, 46);
     list-style: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.skill_list li:hover {
+    /* background-color: rgba(10, 176, 241, 0.2); */
+    transform: scale(1.05);
 }
 
 .github_repo {
@@ -225,6 +246,7 @@ button {
 #github_repo_link:hover {
     color: rgb(97, 96, 96);
     text-decoration: underline 2.5px solid orange;
+    transform: scale(1.05);
 }
 
 #github_repo_link {
@@ -235,6 +257,8 @@ button {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 a:visited {
