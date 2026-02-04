@@ -3,7 +3,7 @@ function toggleMobileMenu(menu) {
 }
 
 function showImage(imageIndex) {
-    const imagePath = `./media/profile_photo${imageIndex === 0 ? '' : imageIndex}.jpg`;
+    const imagePath = `./media/profile_photo${imageIndex === 0 ? '1' : imageIndex}.jpg`;
     const img = document.getElementById("profile_image0");
 
     if (!img.src.match(imagePath)) {
