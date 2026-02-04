@@ -101,18 +101,21 @@ p {
 } */
 
 .project_button, .button_info {
-    background-color: gray;
-    outline-style: solid;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    background-image: linear-gradient(to right, rgb(155, 6, 247) , rgb(64, 64, 67));
+    /* outline-style: solid; */
+    height: auto;
+    max-width: fit-content;
+    /* min-width: 600px; */
     border-radius: 20px;
     color: white;
-    font-size: 30px;
-    cursor: pointer;
     font-weight: bold;
-    transition: all 0.3s ease;
-    transform: scale(1);
+    padding: 10px;
+    text-decoration: none;
 }
+
 
 .project_button:hover, .button_info:hover {
     background-color: rgb(7, 65, 88);
@@ -125,6 +128,7 @@ p {
     font-weight: bold;
     padding: 2px;
     margin-top: 2px;
+    font-size: large;
 }
 
 .containers {
@@ -151,10 +155,11 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: gray;
-    outline-style: solid;
+    background-image: linear-gradient(to right, rgb(155, 6, 247) , rgb(64, 64, 67));
+    /* outline-style: solid; */
     /* height: 475px; */
-    /* width: 500px; */
+    max-width: fit-content;
+    /* min-width: 600px; */
     border-radius: 20px;
     color: white;
     font-weight: bold;
