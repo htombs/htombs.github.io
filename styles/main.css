@@ -99,6 +99,15 @@ p {
     margin: 0;
 }
 
+.project-summary h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
 .status-badge {
     display: inline-block;
     background-color: rgb(10, 176, 241);
@@ -141,6 +150,7 @@ p {
     opacity: 0.08;
     line-height: 1;
 }
+
 .project-hero h2 {
     margin: 0 0 0.5rem 0;
     font-size: 1.1rem;
@@ -149,6 +159,7 @@ p {
     opacity: 0.7;
     font-weight: 400;
 }
+
 .project-hero p {
     margin: 0;
     font-size: 1.05rem;
@@ -156,6 +167,7 @@ p {
     max-width: 600px;
     line-height: 1.6;
 }
+
 .project-status {
     display: inline-block;
     background: #e8a020;
@@ -168,9 +180,11 @@ p {
     border-radius: 20px;
     margin-bottom: 1rem;
 }
+
 .project-section {
     margin-bottom: 2rem;
 }
+
 .project-section h3 {
     font-size: 1rem;
     text-transform: uppercase;
@@ -179,6 +193,7 @@ p {
     padding-bottom: 0.4rem;
     margin-bottom: 1rem;
 }
+
 .problem-solution {
     display: grid;
     grid-template-columns: 1fr 1fr;
