@@ -54,28 +54,62 @@
     <h1>Cassette Finder</h1>
     <br>
     <main>
-        <p>This is a project I'm hoping will be widely used in the bike shop industry. Ideally used by bikeshop mechanics in order to help streamline 
-            their process for ordering cassettes. I'm currently a Manager of a small independant bike shop and the amount of time myself and the 
-            mechanincs would spend searching all our suppliers for a specific cassette was rediculas. We were constantly plagued with stock issues, 
-            compatibility issues, suppliers picking up or dropping brands or sometimes suppliers just closing down. With this database, I aim to build 
-            a free website that mechanics can use as a tool to do the searching for them.</p>
-            <br>
-        <p>The idea is they will select the speed, ratio or the brand they need, and be given a list of all the suppliers that stock compatiable cassettes. 
-            With links and part numbers, they will be able to go straight to that supplier to find what they need, saving hours of time and making the whole 
-            process more efficeint and massively reduce costs for the business.</p>
-            <br>
-        <p>If this is succesfull, I'd love to expand to other parts of a bike, but for the mean time, cassettes are the most frustrating and common time-waster 
-            as their are just so many different ratios and suppliers to search through, so let's start there!</p>
-        <section class="github_repo">
-            <a id="github_repo_link" href="https://github.com/htombs/cassette.finder" target="_blank">Github Repo</a>
-        </section>
-        <ul class="skill_list">
-            <li>Python</li>
-            <li>SQLite3</li>
-            <li>Flask api</li>
-            <li>JavaScript</li>
-            <li>Database Management</li>
-        </ul>
+        <div class="project-hero">
+            <span class="project-status">In Development</span>
+            <h2>The Problem I Set Out to Solve</h2>
+            <p>As a bike shop manager, I watched mechanics waste hours every week hunting across supplier catalogues for compatible cassettes — juggling speed ratings, ratios, brands, and availability. I built Cassette Finder to eliminate that entirely.</p>
+        </div>
+
+        <div class="problem-solution">
+            <div class="ps-card problem">
+                <h4>❌ The Problem</h4>
+                <p>Bike mechanics routinely spend significant time manually searching multiple supplier websites to find a single compatible cassette — battling stock issues, brand changes, and compatibility mismatches across an overwhelming number of speed and ratio combinations.</p>
+            </div>
+            <div class="ps-card solution">
+                <h4>✅ The Solution</h4>
+                <p>A free, searchable web tool that aggregates cassette data across suppliers. Mechanics filter by speed, ratio, or brand and instantly receive a matched list with direct links and part numbers — turning an hours-long task into seconds.</p>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>How It Works</h3>
+            <ul class="feature-list">
+                <li>Users select cassette parameters (speed, ratio, brand) via a clean frontend interface built in JavaScript</li>
+                <li>A Flask REST API processes the query and interrogates a SQLite database populated with supplier stock data</li>
+                <li>Results are returned as a ranked list of compatible cassettes, each with supplier name, part number, and a direct purchase link</li>
+                <li>The database is designed to be updated as suppliers add, drop, or change product lines</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h3>Tech Stack</h3>
+            <ul class="tech-stack">
+                <li>Python</li>
+                <li>Flask (REST API)</li>
+                <li>SQLite3</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+                <li>Database Design</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h3>Roadmap</h3>
+            <ol class="roadmap-list">
+                <li>Complete core cassette database and seed with initial supplier data</li>
+                <li>Build and deploy public-facing search interface</li>
+                <li>Add supplier update pipeline to keep data current</li>
+                <li>Expand to other drivetrain components (chains, derailleurs)</li>
+                <li>Explore partnerships with UK bike trade suppliers for live stock feeds</li>
+            </ol>
+        </div>
+
+        <div class="project-section">
+            <h3>Source Code</h3>
+            <a class="github-btn" href="https://github.com/htombs/cassette.finder" target="_blank">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
     </main>
     <footer>
         <div class="footer">
