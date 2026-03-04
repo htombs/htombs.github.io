@@ -54,24 +54,94 @@
     <h1>Personal Webpage</h1>
     <br>
     <main>
-        <p>This site is my personal webpage and is designed to act as a digital CV for future employers and anyone who's interested to learn more about me.
-            <br>
-        <p>This project started off as an introduction to the world of programming. Starting off with primarily frontend languages, 
-            such as HTML and css, the goal was to create something visual I could test my new learnt skills, while also creating a 
-            digital CV for myself. Having done my research, I felt this was a perfect place to start my coding journey, while also 
-            allowing me to constantly revisit and hone my skills as my career progresses.
-            <br>
-        <p>Having started with HTML and css, i've since learnt and introduced Javascript in order to make my site more mobile friendly 
-            and also show off my basic skill in backend development. The main buik of my backend skill set will be showcased in other projects,
-            all of which will be listed in the projects section of my website.
-        <section class="github_repo">
-            <a id="github_repo_link" href="https://github.com/htombs/htombs.github.io" target="_blank">Github Repo</a>
-        </section>
-        <ul class="skill_list">
-            <li>HTML</li>
-            <li>css</li>
-            <li>JavaScript</li>
-        </ul>
+        <div class="project-hero">
+            <span class="status-badge">● Live</span>
+            <h2>The Project itself</h2>
+            <p>This site is itself a project — a hand-built, no-framework portfolio designed as a living
+                demonstration of my frontend skills and a platform that grows alongside my career as a
+                software developer.</p>
+        </div>
+
+        <div class="project-section">
+            <h4>What I Built &amp; Why</h4>
+            <p>Rather than using a template or site builder, I built this portfolio from scratch to develop a
+                genuine understanding of how the web works. The goal was to create a professional digital CV
+                that showcases both my work and my ability to build clean, accessible, responsive interfaces
+                without relying on any third-party frameworks.
+                <br>
+                <br>
+                Starting from pure HTML and CSS, I progressively enhanced the site as my skills grew — adding
+                JavaScript for mobile responsiveness, improving layout, and continuing to refine it as an
+                ongoing exercise in good engineering practice.</p>
+        </div>
+
+        <div class="project-section">
+            <h4>Key Implementation Details</h4>
+            <ul class="feature-list">
+                <li>Fully responsive layout using CSS media queries and a custom mobile hamburger menu built in vanilla JavaScript — no libraries or frameworks</li>
+                <li>Multi-page architecture with shared navigation, consistent breadcrumb trails, and a modular CSS structure split across purpose-specific stylesheets</li>
+                <li>Hosted on GitHub Pages with CI/CD via GitHub Actions — every push to <code>main</code> automatically deploys</li>
+                <li>Semantic HTML throughout for accessibility and SEO, with appropriate meta tags on every page</li>
+                <li>Lightweight by design — no build tooling, no bundlers, no unnecessary dependencies</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h4>What I Learned</h4>
+            <div class="learning-grid">
+                <div class="learning-card">
+                    <h2>HTML &amp; CSS Fundamentals</h2>
+                    <p>Deeply understood the box model, specificity, positioning, and how to structure semantic, accessible markup.</p>
+                </div>
+                <div class="learning-card">
+                    <h2>Responsive Design</h2>
+                    <p>Built mobile-first layouts from scratch using media queries, without relying on utility frameworks like Bootstrap.</p>
+                </div>
+                <div class="learning-card">
+                    <h2>JavaScript DOM</h2>
+                    <p>Implemented interactive UI components (mobile nav, dynamic menus) through direct DOM manipulation.</p>
+                </div>
+                <div class="learning-card">
+                    <h2>Git &amp; CI/CD</h2>
+                    <p>Managed version control with Git and configured automated deployment via GitHub Actions and GitHub Pages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h4>Tech Stack</h4>
+            <ul class="tech-stack">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>GitHub Pages</li>
+                <li>GitHub Actions</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h4>Development Timeline</h4>
+            <ul class="timeline">
+                <li>
+                    Foundation - Built initial site structure with HTML and CSS; homepage, navigation, and core layout established.
+                </li>
+                <li>
+                    Mobile Support - Introduced JavaScript for the hamburger menu and responsive behaviour across all screen sizes.
+                </li>
+                <li>
+                    Content Expansion - Added Projects, Employment, Skills, and Story pages with consistent design and breadcrumb navigation.
+                </li>
+                <li>
+                    Ongoing - Continuously refined as new skills are acquired — this site is a living document of my progress as a developer.
+                </li>
+            </ul>
+        </div>
+        <div class="project-section">
+            <h4>Source Code</h4>
+            <a class="github-btn" href="https://github.com/htombs/htombs.github.io" target="_blank">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
     </main>
     <footer>
         <div class="footer">

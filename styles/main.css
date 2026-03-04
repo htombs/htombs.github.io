@@ -90,6 +90,39 @@ p {
     font-size: 20px;
 }
 
+.project-summary {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+.project-summary p {
+    margin: 0;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: rgb(10, 176, 241);
+    color: rgb(13, 13, 13);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.75rem;
+    border-radius: 10em;
+    margin-bottom: 0.75rem;
+}
+.project-section {
+    margin-bottom: 2.5rem;
+}
+
+.project-section p {
+    opacity: 0.9;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
 .project-hero {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     color: #fff;
@@ -152,6 +185,26 @@ p {
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
+
+.learning-grid {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.learning-card h2 {
+        margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
 @media (max-width: 600px) {
     .problem-solution { grid-template-columns: 1fr; }
 }
@@ -195,15 +248,15 @@ p {
     color: #fff;
     padding: 0.35rem 1rem;
     border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 500;
 }
+
 .feature-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 .feature-list li {
+    opacity: 0.9;
     padding: 0.5rem 0;
     padding-left: 3rem;
     position: relative;
@@ -216,9 +269,17 @@ p {
     content: "→";
     position: absolute;
     left: 0;
-    color: #0f3460;
-    font-size: 2rem;
-    
+    width: 2rem;
+    height: 2rem;
+    background: #27ae60;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    top: 0.25rem;
 }
 .github-btn {
     display: inline-flex;
@@ -235,21 +296,22 @@ p {
     margin-top: 0.5rem;
 }
 .github-btn:hover { background: #0f3460; }
-.roadmap-list {
+.timeline {
     list-style: none;
     padding: 0;
     margin: 0;
     counter-reset: roadmap;
 }
-.roadmap-list li {
+.timeline li {
+    opacity: 0.9;
     counter-increment: roadmap;
     padding: 0.6rem 0 0.6rem 2.5rem;
     position: relative;
     font-size: 0.95rem;
     border-bottom: 1px solid #f0f0f0;
 }
-.roadmap-list li:last-child { border-bottom: none; }
-.roadmap-list li::before {
+.timeline li:last-child { border-bottom: none; }
+.timeline li::before {
     content: counter(roadmap);
     position: absolute;
     left: 0;
@@ -278,7 +340,7 @@ p {
     /* display: flex;
     flex-direction: column;
     justify-content: space-around; */
-    background-image: linear-gradient(to right, rgb(155, 6, 247) , rgb(64, 64, 67));
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     /* outline-style: solid; */
     height: auto;
     max-width: fit-content;
@@ -329,7 +391,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: linear-gradient(to right, rgb(155, 6, 247) , rgb(64, 64, 67));
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
     /* outline-style: solid; */
     /* height: 475px; */
     max-width: fit-content;
