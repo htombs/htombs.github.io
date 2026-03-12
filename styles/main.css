@@ -309,6 +309,7 @@ p {
     font-size: 0.95rem;
     transition: background 0.2s;
     margin-top: 0.5rem;
+    margin-right: 0.5rem;
 }
 .github-btn:hover { background: #0f3460; }
 .timeline {
