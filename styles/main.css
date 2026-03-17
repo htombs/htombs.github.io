@@ -368,7 +368,6 @@ p {
     text-decoration: none;
 }
 
-
 .project_button:hover, .button_info:hover {
     background-color: rgb(7, 65, 88);
     transform: scale(1.05);
@@ -521,3 +520,185 @@ button {
 a:visited {
     color: rgb(10, 176, 241);
   }
+
+
+.skills-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 20px;
+    padding: 2rem 2.5rem;
+    margin: 0 0 2rem 0;
+}
+.skills-hero-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgb(119, 211, 247);
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+.skills-hero-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(119, 211, 247);
+    text-decoration: underline 2.5px solid orange;
+    margin-bottom: 0.5rem;
+}
+.skills-hero-sub {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+.stat-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 16px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+}
+.stat-num {
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(119, 211, 247);
+    text-decoration: underline 2.5px solid orange;
+    display: block;
+}
+.stat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+    display: block;
+}
+
+.section-heading {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgb(119, 211, 247);
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(119, 211, 247, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding: 0 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 12px;
+    margin-bottom: 2.5rem;
+}
+.tech-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 1px solid transparent;
+}
+.tech-card:hover {
+    transform: translateY(-3px);
+    border-color: rgb(119, 211, 247);
+}
+.tech-card:visited { color: unset; }
+.tech-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.tech-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.tech-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 8px;
+    border-radius: 20px;
+    width: fit-content;
+}
+.badge-lang    { background: rgba(55, 138, 221, 0.25); color: #77d3f7; }
+.badge-front   { background: rgba(29, 158, 117, 0.25); color: #5dcaa5; }
+.badge-back    { background: rgba(186, 117, 23, 0.25); color: #ef9f27; }
+.badge-quality { background: rgba(99, 153, 34, 0.25);  color: #97c459; }
+.badge-tool    { background: rgba(212, 83, 126, 0.25); color: #ed93b1; }
+
+.prof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 2.5rem;
+    padding: 0 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.prof-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    border: 1px solid transparent;
+}
+.prof-card:hover {
+    transform: translateY(-3px);
+    border-color: orange;
+}
+.prof-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.prof-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.prof-sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 2px;
+}
+
+.skills-page-wrap {
+    padding: 0 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .stat-row { grid-template-columns: 1fr; }
+    .skills-hero { padding: 1.5rem; }
+    .tech-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+    .prof-grid { grid-template-columns: 1fr; }
+}
