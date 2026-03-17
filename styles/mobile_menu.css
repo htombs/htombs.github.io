@@ -5,7 +5,7 @@
     cursor: pointer;
     padding: 15px;
 }
-
+ 
 .hamburger_icon div {
     width: 35px;
     height: 5.5px;
@@ -16,22 +16,22 @@
     margin-left: auto;
     margin-right:auto;
 }
-
+ 
 /*how the hamburger sign reacts when clicked */
 .open .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
   }
-  
+ 
 .open .bar2 {
     opacity: 0;
   }
-  
+ 
 .open .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
   }
-
+ 
 /* mobile menu section */
 .open .mobile_menu {
     display: flex;
@@ -39,16 +39,18 @@
     align-items: center;
     justify-content: center;
     padding-left: unset;
+    transition: 0.2s;
 }
-
+ 
 .mobile_menu {
     display: none;
     top: 50px;
     left: 0;
+    transition: 0.2s;
     /* height: calc(80vh - 50px); */
     /* width: 100%; */
 }
-
+ 
 .mobile_menu ul {
     color: rgb(119, 211, 247);
     list-style: none;
@@ -57,7 +59,7 @@
     align-items: center;
     justify-content: space-around;
   }
-  
+ 
 .mobile_menu li {
     color: rgb(119, 211, 247);
     font-size: 30px;
@@ -67,22 +69,22 @@
     border-radius: 10em;
     text-decoration: underline 2.5px solid orange;
   }
-
+ 
 .mobile_menu li a {
     color: rgb(119, 211, 247);
     text-decoration: none;
 }
-  
+ 
 .mobile_menu li:hover {
     transform: scale(1.1);
     transition: 0.3s;
     background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
 }
-
+ 
 .mobile_menu li a:hover {
     color: white;
 }
-
+ 
 @media only screen and (max-width: 600px) {
     header .nav_bar {
         display: none;
@@ -98,7 +100,7 @@
         transition: 0.4s;;
     }
 }
-
+ 
 .drop_down_menu {
     display: flex;
     flex-direction: column;
