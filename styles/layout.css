@@ -1,3 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid orange;
+    padding: 23.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    outline: solid 1px rgb(46, 46, 46);
+    border-radius: 10em;
+    cursor: pointer; 
+    padding-inline-start: 0px;
+    padding-inline-end: 0px; 
+}
+
+.nav_bar .current {
+    background-color: rgb(44, 40, 40);
+}
+
+.nav_bar li {
+    list-style: none; 
+    border-radius: 10em;
+    padding: 10px;
+}
+
+.nav_bar li a {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+
+.nav_bar :hover {
+    background-image: linear-gradient(to right, rgb(251, 107, 11) , rgb(195, 12, 251));
+    color: aqua;
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
 /* drop down menu toggle section*/
 .hamburger_icon {
     /* margin: auto 0; */
@@ -105,4 +155,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .breadcrumb {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.breadcrumb li {
+    list-style: none;
+    font-size: 20px;
+    border-radius: 10em;
+}
+
+.breadcrumb li a {
+    color: rgb(119, 211, 247);
+    text-decoration: none;
+}
+
+.breadcrumb li :hover {
+    color: white;
+}
+
+.breadcrumb li+li ::before {
+    color: rgb(10, 176, 241);
+    font-size: 20px;
+    content: ">";
+    padding-right: 1em;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    border-top: solid 3px orange;
+    padding: 2em;
+}
+
+.footer a {
+    color: rgb(10, 176, 241);
+    font-size: xx-large;
 }

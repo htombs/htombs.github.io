@@ -1,0 +1,306 @@
+/* -- project page styles -- */
+.project-summary {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+.project-summary p {
+    margin: 0;
+}
+
+.project-summary h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: rgb(10, 176, 241);
+    color: rgb(13, 13, 13);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.75rem;
+    border-radius: 10em;
+    margin-bottom: 0.75rem;
+}
+
+.project-section {
+    margin-bottom: 2rem;
+}
+
+.project-section h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #0f3460;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.project-section p {
+    opacity: 0.9;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-hero::before {
+    content: "⚙";
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 6rem;
+    opacity: 0.08;
+    line-height: 1;
+}
+
+.project-hero h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.project-hero p {
+    margin: 0;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.project-status {
+    display: inline-block;
+    background: #e8a020;
+    color: #1a1a1a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.problem-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.learning-grid {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.learning-card h2 {
+        margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .problem-solution { grid-template-columns: 1fr; }
+}
+
+.ps-card {
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+}
+
+.ps-card.problem {
+    background: #fff3f3;
+    border-left: 4px solid #c0392b;
+}
+
+.ps-card.solution {
+    background: #f0fff4;
+    border-left: 4px solid #27ae60;
+}
+
+.ps-card h4 {
+    margin: 0 0 0.6rem 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+.ps-card.problem h4 { 
+    color: #c0392b; 
+}
+
+.ps-card.solution h4 { 
+    color: #27ae60; 
+}
+
+.ps-card p {
+    color: black;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-stack li {
+    background: #0f3460;
+    color: #fff;
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    opacity: 0.9;
+    padding: 0.5rem 0;
+    padding-left: 3rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.feature-list li:last-child { 
+    border-bottom: none; 
+}
+
+.feature-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: #27ae60;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    top: 0.25rem;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #1a1a2e;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+.github-btn:hover { 
+    background: #0f3460; 
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: roadmap;
+}
+
+.timeline li {
+    opacity: 0.9;
+    counter-increment: roadmap;
+    padding: 0.6rem 0 0.6rem 2.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.timeline li:last-child { 
+    border-bottom: none; 
+}
+
+.timeline li::before {
+    content: counter(roadmap);
+    position: absolute;
+    left: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #e8a020;
+    color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    top: 0.55rem;
+}
+
+/* .github_repo {
+    display: flex;
+    justify-content: center;
+    color: rgb(10, 176, 241);
+    text-decoration: underline 2.5px solid orange;
+
+}
+
+#github_repo_link:hover {
+    color: rgb(97, 96, 96);
+    text-decoration: underline 2.5px solid orange;
+    transform: scale(1.05);
+}
+
+#github_repo_link {
+    color: white;
+    text-decoration: underline 2.5px solid orange;
+    background-color: rgb(10, 176, 241);
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+} */
+

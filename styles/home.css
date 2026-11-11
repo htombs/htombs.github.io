@@ -1,0 +1,55 @@
+.homepage_info {
+    padding-bottom: 3em;
+}
+
+.image_container {
+    height: 450px;
+}
+
+#profile_image0 {
+    min-width: 315px;
+    min-height: 450px;
+    border-radius: 30px;
+}
+
+.personal_info ul {
+    justify-content: space-between;
+}
+
+.personal_info ul {
+    padding: 20px;
+}
+
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1em;
+    row-gap: 1em;
+    font-size: 25px;
+}
+
+.personal_info li {
+    border-bottom: 3px solid orange;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.personal_info li:hover {
+    border-bottom-color: rgb(119, 211, 247);
+    transform: scale(1.05);
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    text-align: center;
+    /* border-bottom: 3px solid orange; */
+}
+
+img {
+    height: 250px;
+}

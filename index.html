@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Harry Tombs Home Page</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/base.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="styles/home.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="styles/layout.css" media="screen" type="text/css">
+
+<!-- 
     <link rel="stylesheet" href="styles/main.css" media="screen" type="text/css">
     <link rel="stylesheet" href="styles/breadcrumbs.css" media="screen" type="text/css">
     <link rel="stylesheet" href="styles/body.css" media="screen" type="text/css"/>
     <link rel="stylesheet" href="styles/mobile_menu.css" media="screen" type="text/css">
     <link rel="stylesheet" href="styles/header.css" media="screen" type="text/css">
-    <link rel="stylesheet" href="styles/footer.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="styles/footer.css" media="screen" type="text/css"> -->
     <script src="https://kit.fontawesome.com/01f26ab4ac.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,7 +27,7 @@
             <ul class="nav_bar">
                 <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="./html/story.html">Story</a></li>
-                <li><a href="./html/projects.html">Projects</a></li>
+                <li><a href="./html/projects/index.html">Projects</a></li>
                 <li><a href="./html/employment.html">Employment</a></li>
                 <li><a href="./html/skills.html">Skills</a></li>
             </ul>
@@ -32,7 +40,7 @@
                 <ul class="mobile_menu">
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="./html/story.html">Story</a></li>
-                    <li><a href="./html/projects.html">Projects</a></li>
+                    <li><a href="./html/projects/index.html">Projects</a></li>
                     <li><a href="./html/employment.html">Employment</a></li>
                     <li><a href="./html/skills.html">Skills</a></li>
                 </ul>
@@ -41,13 +49,13 @@
     </header>
     <br>
     <main>
-        <section class="main">
+        <section class="homepage_info">
             <div class="name">
                 <h1>Harry Tombs</h1>
             </div>
             <div class="head">
                 <div class="image_container">
-                    <img class="image" id="profile_image0" src="./media/profile_photo1.jpg" alt="profile_image0">
+                    <img class="image" id="profile_image0" src="./media/profile/profile_photo1.jpg" alt="profile_image0">
                 </div>
                 <ul class="personal_info">
                     <li type="button" onclick="showImage(1)" id="img0">Aspiring Software Engineer</li>
@@ -66,6 +74,7 @@
             <a href="https://github.com/htombs"><i class="fa-brands fa-github"></i></a>  
         </div>
     </footer>
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/home.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
