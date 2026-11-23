@@ -2,6 +2,11 @@
     padding-bottom: 3em;
 }
 
+.head {
+    display: flex;
+    justify-content: center;
+}
+
 .image_container {
     height: 450px;
 }
@@ -10,6 +15,7 @@
     min-width: 315px;
     min-height: 450px;
     border-radius: 30px;
+    max-width: 350px;
 }
 
 .personal_info ul {
